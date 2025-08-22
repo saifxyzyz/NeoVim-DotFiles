@@ -6,3 +6,9 @@ debug
 foo.*
 *.log
 data
+Session.vim
+.undodir/
+nvimlog.log
+lazy-lock.json
+/pack/
+/plugged/
