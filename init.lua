@@ -19,3 +19,9 @@ require("tiny-inline-diagnostic").setup({
     factor = 0.22, -- Transparency factor (0.0 = transparent, 1.0 = opaque)
   },
 })
+require("lazy").setup({
+  "neovim/nvim-lspconfig",
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  -- ... other plugins
+})

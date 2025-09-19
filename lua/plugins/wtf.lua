@@ -8,6 +8,14 @@ return {
   opts = {},
   keys = {
     {
+      "<leader>wf",
+      mode = { "n", "x" },
+      function()
+        require("wtf").fix()
+      end,
+      desc = "Fix diagnostic with AI",
+    },
+    {
       "<leader>wd",
       mode = { "n", "x" },
       function()
