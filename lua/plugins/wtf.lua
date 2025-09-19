@@ -5,7 +5,13 @@ return {
     "MunifTanjim/nui.nvim",
     "nvim-telescope/telescope.nvim",
   },
-  opts = {},
+  -- keep opts empty i.e. opts{}, or change 'gemini' to the ai api that you would like to use here
+  opts = {
+    provider = "gemini",
+    providers = {
+      gemini = {},
+    },
+  },
   keys = {
     {
       "<leader>wf",
