@@ -4,10 +4,10 @@
 ## Installation:  
 ## On Windows:  
 Back up your current NeoVim Files:
-- `# nvim config
-Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak`
-- `# nvim cache
-Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak`  
+- nvim config  
+`Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak`
+- nvim cache  
+`Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak`  
 
 Clone this repo:  
 - `git clone https://github.com/saifxyzyz/NeoVim-DotFiles $env:LOCALAPPDATA\nvim`  
