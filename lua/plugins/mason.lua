@@ -16,8 +16,9 @@ return {
       -- Lua
       "lua_ls",
       -- Python
-      "ruff",
-      "basedpyright",
+      "pyright",
+      -- "ruff",
+      -- "basedpyright",
       -- Web Dev
       "html",
       "cssls",
