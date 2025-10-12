@@ -9,7 +9,9 @@ return {
   opts = {
     provider = "gemini",
     providers = {
-      gemini = {},
+      gemini = {
+        model_id = "gemini-2.5-flash",
+      },
     },
   },
   keys = {
