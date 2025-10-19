@@ -14,14 +14,14 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-  "neovim/nvim-lspconfig",
-  "mason-org/mason.nvim",
-  "mason-org/mason-lspconfig.nvim",
-  -- ... other plugins
+  { "neovim/nvim-lspconfig" },
+  { "mason-org/mason.nvim" },
+  { "mason-org/mason-lspconfig.nvim" },
+  { "benlubas/molten-nvim", build = ":UpdateRemotePlugins" },
+  { "goerz/jupytext.nvim" },
+  -- other plugins,
   spec = {
-    -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    -- import/override with your plugins
     { import = "plugins" },
   },
   defaults = {
