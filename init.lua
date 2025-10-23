@@ -1,4 +1,5 @@
 require("config.lazy")
+vim.g.python3_host_prog ="/Users/saifm/.pyenv/pyenv-win/versions/molten-nvim/Scripts/python.exe"
 require("config.options")
 require("config.keymaps")
 require("config.autocmds")

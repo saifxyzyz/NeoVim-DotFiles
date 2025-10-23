@@ -164,7 +164,8 @@ function M.config()
 					else
 						return -- No nodes selected, do nothing
 					end
-
+          local PYTHON_EXE_PATH = "C:/Users/saifm/anaconda3/python.exe"
+          local TRASH_EXE_PATH = "C:/Users/saifm/anaconda3/Scripts/send2trash.exe"
 					inputs.confirm(msg, function(confirmed)
 						if not confirmed then
 							return
@@ -172,11 +173,11 @@ function M.config()
 
 						local paths_to_trash = {}
 						for _, node in ipairs(nodes) do
-							local windows_path = vim.fn.substitute(node.path, "/", "\\", "g")
-							table.insert(paths_to_trash, vim.fn.fnameescape(windows_path))
+							-- local windows_path = vim.fn.substitute(node.path, "/", "\\", "g")
+							table.insert(paths_to_trash, vim.fn.fnameescape(node.path))
 						end
 
-						local cmd = vim.list_extend({ "trash" }, paths_to_trash)
+						local cmd = vim.list_extend({ PYTHON_EXE_PATH, TRASH_EXE_PATH }, paths_to_trash)
 						local result = vim.fn.system(cmd)
 
 						if result.code == 0 then
