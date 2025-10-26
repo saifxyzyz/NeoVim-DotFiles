@@ -4,7 +4,6 @@ require("config.options")
 require("config.keymaps")
 require("config.autocmds")
 require("plugins.completion")
-vim.keymap.set("n", "<leader>ls", ":split | terminal live-server --host=localhost --open<CR>", { silent = true })
 require("tiny-inline-diagnostic").setup({
   signs = {
     left = "", -- Left border character
