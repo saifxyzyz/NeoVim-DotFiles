@@ -9,6 +9,11 @@ return {
   opts = {
     provider = "gemini",
     providers = {
+      ollama = {
+        api_key = "notrelevant?",
+        url = "http://localhost:11434/v1/chat/completions",
+        model_id = "gemma3:270m",
+      },
       gemini = {
         model_id = "gemini-2.5-flash",
       },
