@@ -15,6 +15,8 @@ Clone this repo:
 Start Neovim:  
 `nvim`  
 
+Replace paths:  
+Try to grep ("<leader>fg" keymap configured in my dotfiles, you'd probably need to install ripgrep for this to work) "saifm" and replace the paths with your own
 ## To enable AI Features
 In windows you can add environment variable (GEMINI_API_KEY, CLAUDE_API_KEY, e.t.c) and set the value to your api key
 
