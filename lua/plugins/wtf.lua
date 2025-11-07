@@ -1,5 +1,5 @@
 return {
-  "piersolenski/wtf.nvim",
+  "saifxyzyz/wtf.nvim",
   dependencies = {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
@@ -15,7 +15,7 @@ return {
         model_id = "gemma3:270m",
       },
       gemini = {
-        model_id = "gemini-2.5-flash",
+        model_id = "gemini-2.0-flash",
       },
     },
   },
@@ -67,6 +67,14 @@ return {
         require("wtf").grep_history()
       end,
       desc = "Grep previous chat history with Telescope",
+    },
+    {
+      mode = { "n" },
+      "<leader>wc",
+      function()
+        require("wtf").copy()
+      end,
+      desc = "Copy the diagnostic",
     },
   },
 }
