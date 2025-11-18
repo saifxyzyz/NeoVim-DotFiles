@@ -15,6 +15,23 @@ return {
         "<cmd>Leet<cr>",
         desc = "Open Leetcode", -- Corrected description
       },
+      {
+        "<leader>lr",
+        "<cmd>Leet run<cr>",
+        desc = "Run test", -- Corrected description
+      },
+      {
+        "<leader>ll",
+        "<cmd>Leet lang<cr>",
+        desc = "Choose language"
+      },
+      {
+        "<leader>lcs",
+        "<cmd>Leet submit<cr>",
+        desc = "Submit solution"
+      }
+
+
   }
 
 }

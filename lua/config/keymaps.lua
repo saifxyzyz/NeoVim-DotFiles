@@ -5,3 +5,5 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>fg', function()
     builtin.live_grep({})
 end, { desc = 'Telescope Live Grep (Search Content)' })
+-- Replace word under cursor
+vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
