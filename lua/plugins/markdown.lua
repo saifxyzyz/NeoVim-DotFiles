@@ -8,12 +8,12 @@ return {
   ft = { "markdown" },
   keys = {
     {
-      "<leader>mds",
+      "<leader>rdp",
       "<cmd>MarkdownPreview<cr>",
       desc = "start markdown preview", -- Corrected description
     },
     {
-      "<leader>mdx",
+      "<leader>rdx",
       "<cmd>MarkdownPreviewStop<cr>",
       desc = "stop markdown preview", -- Corrected description
     },
